@@ -1,0 +1,59 @@
+.btn-1 {
+  display: inline-block;
+  width: 120px;
+  box-sizing: content-box;
+  padding: 7px 10px;
+  border: 1px solid #fff;
+  bottom: -25px;
+  margin-right: 10px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 5; }
+
+.btn-1::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.1s;
+  transition-timing-function: ease-out; }
+
+/* Tipos de botones*/
+.btn-1a::after,
+.btn-1b::after {
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0; }
+
+.btn-1a:hover::after,
+.btn-1a:active::after,
+.btn-1b:hover::after,
+.btn-1b:active::after {
+  height: 100%; }
+
+/*Boton 1A*/
+.btn-1a {
+  border: 1px solid #333;
+  color: #333; }
+
+.btn-1a::after {
+  background: #333; }
+
+.btn-1a:hover,
+.btn-1a:active {
+  color: #fafafa; }
+
+/*Boton 1B*/
+.btn-1b::after {
+  background: #fff; }
+
+.btn-1b:hover,
+.btn-1b:active {
+  color: #333; }
+
+/*# sourceMappingURL=btn.css.map */

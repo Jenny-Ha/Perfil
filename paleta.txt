@@ -1,0 +1,5 @@
+colors:
+paleta 1:
+#773344, #e3b5a4, #f5e9e2, #0b0014, #d44d5c
+paleta 2:
+#211103, #3d1308, #7b0d1e, #9f2042, #f8e5ee

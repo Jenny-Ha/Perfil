@@ -1,0 +1,12 @@
+.elemento_animado {
+animation-duration: 0.25s;
+transition-timing-function: ease-in;
+animation-fill-mode: both;
+}
+.transicion--fadein {
+animation-name: fadeIn;
+}
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
