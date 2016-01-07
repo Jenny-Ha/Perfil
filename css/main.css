@@ -217,23 +217,7 @@ header {
 
 /* -- Section Skills -- */
 #skills {
-  /*
-  li:first-child i {
-    color: darkslateblue;
-  }
-  li:nth-child(2) i {
-    color: indianred;
-  }
-  li:nth-child(3) i  {
-    color: #efcd18;
-  }
-  li:nth-child(4) i {
-    color:palevioletred;
-  }
-  li:last-child i {
-    color: black;
-  }
-  */ }
+  /* Efecto para cada skill */ }
   #skills ul {
     display: flex;
     flex-wrap: wrap;
@@ -244,12 +228,11 @@ header {
     text-align: center;
     padding: 10px;
     margin: 10px 15px;
-    position: relative;
     overflow: hidden; }
     #skills li i {
       display: block;
       font-size: 90px;
-      color: #6d6d6d;
+      color: #9f9f9f;
       line-height: 0;
       margin: auto; }
   #skills .inner {
@@ -260,12 +243,23 @@ header {
       background-color: rgba(0, 0, 0, 0.7);
       color: #fafafa;
       margin: 0 -10px; }
-  #skills li:hover {
+  #skills li:hover,
+  #skills li:focus {
     background-color: #fff;
     box-shadow: 1px 1px 1px #999; }
   #skills li:focus .inner,
   #skills li:hover .inner {
     overflow: visible; }
+  #skills li:nth-child(1):hover i {
+    color: #6589a7; }
+  #skills li:nth-child(2):hover .inner i {
+    color: #d86975; }
+  #skills li:nth-child(3):hover .inner i {
+    color: #f0c370; }
+  #skills li:nth-child(4):hover .inner i {
+    color: #f097a4; }
+  #skills li:nth-child(5):hover .inner i {
+    color: #333; }
 
 /* -- Portfolio -- */
 #portfolio {

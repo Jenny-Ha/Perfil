@@ -28,7 +28,7 @@ h1, h2, h3 {
 }
 h2 {
   margin-top: 0;
-  margin-bottom: 35px; 
+  margin-bottom: 35px;
   position: relative;
 }
 h2::after {
@@ -51,7 +51,7 @@ a:focus{
 }
 /* Clases generales */
 @import "btn.scss";
-  
+
 /*unimplemented*/
 .unimplemented {
   display: none;
@@ -72,7 +72,7 @@ header {
   height: 100vh;
   //width: 320px;
   //height: 480px;
-  
+
   img {
     width: 100px;
     height: 100px;
@@ -136,38 +136,19 @@ header {
     flex-wrap: wrap;
     justify-content: center;
   }
-  /*
-  li:first-child i {
-    color: darkslateblue;
-  }
-  li:nth-child(2) i {
-    color: indianred;
-  }
-  li:nth-child(3) i  {
-    color: #efcd18;
-  }
-  li:nth-child(4) i {
-    color:palevioletred;
-  }
-  li:last-child i {
-    color: black;
-  }
-  */
+
   li {
     width: 110px;
     height: 130px;
-    //background-color: beige;
-    //outline: 1px solid skyblue;
     text-align: center;
     padding: 10px;
     margin: 10px 15px;
-    
-    position: relative;
+
     overflow: hidden;
     i {
       display: block;
       font-size: 90px;
-      color: #6d6d6d;
+      color: #9f9f9f;
       line-height: 0;
       margin: auto;
     }
@@ -182,13 +163,30 @@ header {
       margin: 0 -10px;
     }
   }
-  li:hover {
+  li:hover,
+  li:focus {
     background-color: #fff;
     box-shadow: 1px 1px 1px #999;
   }
   li:focus .inner,
   li:hover .inner {
     overflow: visible;
+  }
+  /* Efecto para cada skill */
+  li:nth-child(1):hover i {
+    color: #6589a7;
+  }
+  li:nth-child(2):hover .inner i {
+    color: #d86975;
+  }
+  li:nth-child(3):hover .inner i {
+    color: #f0c370;
+  }
+  li:nth-child(4):hover .inner i {
+    color: #f097a4;
+  }
+  li:nth-child(5):hover .inner i {
+    color: #333;
   }
 }
 /* -- Portfolio -- */
@@ -200,7 +198,7 @@ header {
     justify-content: center;
   }
   li {
-    width: 300px; 
+    width: 300px;
     margin: 35px 15px;
   }
   img {
@@ -239,13 +237,13 @@ footer {
   a:hover i {
     background-color: #d44d5c;
     border: 2px solid #d44d5c;
-    
-  } 
-  //prueba 
+
+  }
+  //prueba
 }
 .copyright {
   background-color: rgba(0, 0, 0, .9);
-  color: #bcbcbc; 
+  color: #bcbcbc;
   font-size: 0.9em;
   padding-top: 10px;
   padding-bottom: 5px;
